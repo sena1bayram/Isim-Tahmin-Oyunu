@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SureliOyunActivity">
+
+    <EditText
+        android:id="@+id/editTxtTahminS"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tahmininizi Giriniz"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBilgiS"
+        app:layout_constraintStart_toStartOf="@+id/textViewBilgiS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBilgiS" />
+
+    <TextView
+        android:id="@+id/textViewBilgiS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIlS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewIlS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlS" />
+
+    <TextView
+        android:id="@+id/textViewIlS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtBolumToplamPuanS"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtBolumToplamPuanS"
+        app:layout_constraintTop_toBottomOf="@+id/txtBolumToplamPuanS" />
+
+    <Button
+        android:id="@+id/btnTahminEtS"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="btnTahminEtS"
+        android:text="Tahminde Bulun"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminS" />
+
+    <Button
+        android:id="@+id/btnHarfAlS"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="btnHarfAlS"
+        android:text="Harf Al"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnTahminEtS"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTahminS"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminS" />
+
+    <TextView
+        android:id="@+id/txtBolumToplamPuanS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Toplam Bölüm Puanı: 0"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="3:00"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtBolumToplamPuanS"
+        app:layout_constraintStart_toStartOf="@+id/txtBolumToplamPuanS"
+        app:layout_constraintTop_toBottomOf="@+id/txtBolumToplamPuanS" />
+
+    <Button
+        android:id="@+id/btnTekrarOynaS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Tekrar Oyna"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="btnTekrarOynaS"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtTahminS"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTahminS"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminS" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

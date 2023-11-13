@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDF3E3"
+    tools:context=".NormalOyunActivity">
+
+    <TextView
+        android:id="@+id/textViewBilgiN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBolumToplamPuanN" />
+
+    <TextView
+        android:id="@+id/textViewIlN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBilgiN"
+        app:layout_constraintStart_toStartOf="@+id/textViewBilgiN"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBilgiN" />
+
+    <EditText
+        android:id="@+id/editTxtTahminN"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tahmininizi Giriniz"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIlN"
+        app:layout_constraintStart_toStartOf="@+id/textViewIlN"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlN" />
+
+    <Button
+        android:id="@+id/btnHarfAlN"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="btnHarfAlN"
+        android:text="Harf Al"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnTahminEtN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminN" />
+
+    <Button
+        android:id="@+id/btnTahminEtN"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="70dp"
+        android:onClick="btnTahminEtN"
+        android:text="Tahminde Bulun"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTahminN"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTahminN" />
+
+    <TextView
+        android:id="@+id/txtBolumToplamPuanN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Toplam Bölüm Puanı: 0"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
